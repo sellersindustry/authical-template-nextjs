@@ -23,7 +23,9 @@ export default () => {
     return (
         <div className="authical--component fullscreen">
             {authical.config.organization?.authicalBranding ?
-                <div className="text--badge secured-by-authical">Secured By <b>Authical</b></div>
+                <a href="https://github.com/sellersindustry/authical-core" target="_blank">
+                    <div className="text--badge secured-by-authical">Secured By <b>Authical</b></div>
+                </a>
             : null}
             {(stage == 0) ? <Signin setStage={setStage} email={email} setEmail={setEmail}/> : null}
             {(stage == 1) ? <Otp setStage={setStage} email={email}/> : null}
