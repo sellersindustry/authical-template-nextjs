@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.navigation {
+    position: sticky;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.navigation .navigation-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navigation .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navigation .action {
+    flex-grow: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+
+button {
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0.625rem 1.25rem;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition-duration: 100ms;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: rgb(41, 41, 41);
+}
+
+
+.authical--root.theme--dark {
+    background: #19191A;
+    color: white;
+}
+
+.authical--root.theme--dark button {
+    background: white;
+    color: black;
+}
+
+.authical--root.theme--dark button:hover {
+    background: rgb(219, 219, 219);
+}
+
+.authical--root {
+    min-height: 100vh;
+}
